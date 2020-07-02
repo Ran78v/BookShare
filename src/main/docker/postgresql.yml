@@ -1,0 +1,11 @@
+version: '2'
+services:
+  bookshare-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/bookshare/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=bookshare
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
